@@ -1,0 +1,29 @@
+---
+---
+body {
+  padding-top: 80px;
+}
+
+.intro {
+  text-align: center;
+  h2 {
+    font-size: 18px;
+  }
+}
+
+#open-source {
+  .thumbnail {
+    min-height: 290px;
+    position: relative;
+    .btn {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+}
+
+#sites {
+  img {
+    max-height: 170px;
+  }
+}

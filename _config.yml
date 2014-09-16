@@ -1,0 +1,5 @@
+name: Personal Site
+markdown: redcarpet
+highlighter: true
+sass:
+  style: :compressed
