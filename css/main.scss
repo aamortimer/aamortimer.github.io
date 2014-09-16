@@ -1,61 +1,46 @@
 ---
 ---
 @import 'animated';
+@import 'mixins';
 
 $blue: #3276b1;
 $grey: #666;
 
 @include animation(fade-in-up);
 
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
 body {
-  padding-top: 80px;
-  background: transparent url('../imgs/bg.jpg') 50% 50%;
+  background: #000 url('../imgs/bg.jpg') 50% 50% no-repeat;
   background-size: cover;
+  padding-top: 60px;
 }
 
-.intro {
+#home {
   text-align: center;
-  h2 {
-    font-size: 18px;
-  }
+  margin-bottom: 200px;
+  padding: 60px 0;
   @include animate(fade-in-up, 1s);
-}
-
-h2.page-title {
-  color: #fff;
-}
-
-#main-content {
-  
-}
-
-div.thumbnail {
-  background-color: rgba(255,255,255,.8);
-  border: 1px solid rgba(255,255,255,.6);
-  p {
-    color: $grey;
+  h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
   }
-  h3 {
-    color: $blue;
+  p.lead {
+    font-size: 20px;
+    color: #000;
   }
 }
 
-#open-source {
-  .thumbnail {
-    min-height: 290px;
-    position: relative;
-    .btn {
-      position: absolute;
-      bottom: 10px;
-    }
-  }
+section {
+  padding-bottom: 60px;
 }
 
-#sites {
-  img {
-    max-height: 170px;
-  }
-  h3 {
-    font-size: 1.1em;
-  }
+#about {
+  background: #fff;
 }
+
+#projects {}
+
+#open-source-projects{}
