@@ -1,13 +1,33 @@
 ---
 ---
+$blue: #3276b1;
+$grey: #666;
+
 body {
   padding-top: 80px;
+  background: transparent url('../imgs/bg.jpg') 50% 50%;
+  background-size: cover;
 }
 
 .intro {
   text-align: center;
   h2 {
     font-size: 18px;
+  }
+}
+
+h2.page-title {
+  color: #fff;
+}
+
+div.thumbnail {
+  background-color: rgba(255,255,255,.8);
+  border: 1px solid rgba(255,255,255,.6);
+  p {
+    color: $grey;
+  }
+  h3 {
+    color: $blue;
   }
 }
 
@@ -25,5 +45,8 @@ body {
 #sites {
   img {
     max-height: 170px;
+  }
+  h3 {
+    font-size: 1.1em;
   }
 }
