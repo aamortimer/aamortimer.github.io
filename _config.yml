@@ -3,3 +3,4 @@ markdown: redcarpet
 highlighter: true
 sass:
   style: :compressed
+  sass_dir: _sass
